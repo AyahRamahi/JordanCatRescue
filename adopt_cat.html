@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 
+            Jordan Cat Rescue - Adopt Cat
+        </title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+
+        <!-- CSS Imports -->
+        <link rel="stylesheet" href="assets/css/adopt_cat.css">
+    </head>
+
+    <body>
+        <!-- head section -->
+        <div class="head">
+            <!-- navbar -->
+            <div class="navbar">
+                <a href="home.html" class="left">Jordan Cat Rescue</a>
+                <a href="home.html" selected>Home</a>
+                <a href="adopt_cat.html">Adopt a Cat</a>
+            </div>
+
+            <!-- description -->
+            <div class="description">
+                <h2>Enter the characteristics of the cat you want to adopt</h2>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- form/left section -->
+            <div class="left">
+                <div class="container">
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+
+                        <label for="breed">Breed</label>
+                        <input type="text" id="breed" placeholder="Breed">
+
+                        <label for="color">Color</label>
+                        <input type="text" id="color" placeholder="Color">
+
+                        <label for="age">Age</label>
+                        <input type="number" id="age" placeholder="Age">
+
+
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                        
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </form>
+
+                    <button type="button" onClick="submit();">Submit</button>
+                  </div>
+            </div>
+
+            <!-- table/right section -->
+            <div class="right">
+                <h3>List:</h3>
+
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Breed</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                      </tr>
+                    </thead>
+
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- JavaScript Imports -->
+        <script type="text/javascript" src="assets/js/adopt_cat.js"></script>
+    </body>
+</html>
